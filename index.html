@@ -435,6 +435,60 @@
             <use class="cross" href="./images/icons.svg/sprite.svg#button"></use>
           </svg>
         </button>
+        <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <label
+            >Ім'я
+            <div class="modal-wrapper">
+              <input class="modal-input" type="text" name="name" />
+              <svg class="modal-icon-input" width="12" height="12">
+                <use href="./images/icons.svg/sprite.svg#man-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label
+            >Телефон
+            <div class="modal-wrapper">
+              <input class="modal-input" type="text" name="phone" />
+              <svg class="modal-icon-input" width="13" height="13">
+                <use href="./images/icons.svg/sprite.svg#phone-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label
+            >Пошта
+            <div class="modal-wrapper">
+              <input class="modal-input" type="text" name="post" />
+              <svg class="modal-icon-input" width="15" height="12">
+                <use href="./images/icons.svg/sprite.svg#email-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label
+            >Коментар
+            <textarea
+              class="modal-input textarea"
+              name="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+
+          <label class="modal-form-check-wrapper">
+            <input required class="modal-checkbox visually-hidden" type="checkbox" name="privacy" />
+            <svg class="modal-form-own-check" width="16px" height="15px">
+              <use
+                class="model-form-own-check-icon"
+                href="./images/icons.svg/sprite.svg#check-mark"
+              ></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю&nbsp; 
+            <a href="">Умови договору</a>
+          </label>
+
+          <button type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>
