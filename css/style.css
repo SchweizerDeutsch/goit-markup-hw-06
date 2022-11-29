@@ -37,12 +37,12 @@ ol {
   font-family: 'Roboto', sans-serif;
 } */
 
-/* body {
+body {
   background-color: #ffffff;
   color: var(--primary-tex-color);
   letter-spacing: 0.03em;
   line-height: 1.71;
-} */
+}
 
 /* button {
   cursor: pointer;
@@ -708,7 +708,6 @@ ul {
 }
 
 .footer-form-subscribe {
-  display: inline-flex;
   width: 358px;
   height: 50px;
   background-color: #2f303a;
