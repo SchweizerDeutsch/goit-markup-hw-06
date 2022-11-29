@@ -1,11 +1,11 @@
-:root {
+/* :root {
   --primary-tex-color: #757575;
   --title-tex-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 p {
@@ -21,19 +21,34 @@ ol {
   padding-left: 0;
 }
 
-img {
-  display: block;
+.list {
+  list-style: none;
 }
 
-body {
+.link {
+  text-decoration: none;
+} */
+
+/* img {
+  display: block;
+} */
+
+/* body {
+  font-family: 'Roboto', sans-serif;
+} */
+
+/* body {
   background-color: #ffffff;
   color: var(--primary-tex-color);
-  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   line-height: 1.71;
-}
+} */
 
-.visually-hidden {
+/* button {
+  cursor: pointer;
+} */
+
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -42,11 +57,11 @@ body {
   overflow: hidden;
   border: 1px;
   clip: rect(0 0 0 0);
-}
+} */
 
 /* components  */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -56,7 +71,7 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
 /* header */
 
@@ -140,7 +155,6 @@ ul {
 /* Site-nav */
 
 .site-nav a {
-  font-family: 'Roboto';
   font-style: normal;
 }
 
@@ -202,7 +216,6 @@ ul {
 /* Auth-nav */
 
 .auth-nav.list {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -489,7 +502,6 @@ ul {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -696,6 +708,7 @@ ul {
 }
 
 .footer-form-subscribe {
+  display: inline-flex;
   width: 358px;
   height: 50px;
   background-color: #2f303a;
@@ -706,6 +719,11 @@ ul {
   color: var(--white-color);
   padding-left: 15px;
   margin-right: 12px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-subscribe:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .button-subscribe {
@@ -721,7 +739,7 @@ ul {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-subscribe:hover,
@@ -786,7 +804,7 @@ ul {
 
 .auth-nav.list a {
   color: var(--primary-tex-color);
-  font-family: 'Roboto';
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -817,7 +835,7 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  cursor: pointer;
+
   letter-spacing: 0.03em;
   padding: 6px 22px;
   border-radius: 4px;
@@ -903,7 +921,7 @@ ul {
   top: 8px;
   width: 30px;
   height: 30px;
-  cursor: pointer;
+
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
@@ -961,6 +979,7 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   fill: var(--title-tex-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input {
@@ -997,14 +1016,14 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-tex-color);
-  cursor: pointer;
+
   margin-bottom: 30px;
 }
 
 .modal-form-own-check {
   border: 2px solid #212121;
   border-radius: 3px;
-  cursor: pointer;
+
   padding: 2px;
   margin-right: 10px;
   fill: var(--white-color);
@@ -1035,7 +1054,7 @@ ul {
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: none;
-  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-checkbox:hover,
